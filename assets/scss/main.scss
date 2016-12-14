@@ -33,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $heading-font-family;
+  font-family: 'FFF_Tusj';
   font-size: $base-font-size;
   line-height: $heading-line-height;
 
@@ -42,11 +42,12 @@ h6 {
 p,
 pre {
   margin: 0 0 $small-spacing;
+  font-family: 'Trocchi';
 }
 a {
   transition: $base-transition;
   text-decoration: none;
-
+font-family: 'Open Sans';
   color: $action-color;
   &:active,
   &:focus,
@@ -58,6 +59,14 @@ a {
     color: lighten($action-color, 15%);
     outline: none;
   }
+}
+ul {
+  li {
+    font-family: 'Open Sans';
+  }
+}
+button {
+  font-family: 'Fedra-Sans';
 }
 hr {
   margin: $base-spacing 0;
@@ -88,6 +97,36 @@ picture {
 
   width: 1170px;
 }
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'),local('Lobster-Regular'),url('../fonts/Lobster.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'),local('OpenSans'),url('../fonts/OpenSans.woff') format('woff');
+}
+@font-face {
+  font-family: 'FFF_Tusj';
+  font-style: normal;
+  font-weight: 400;
+  src: local('FFF_Tusj'),local('FFF_Tusj'),url('../fonts/FFF_Tusj.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Trocchi';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Trocchi'),local('Trocchi'),url('../fonts/Trocchi.otf') format('otf');
+}
+@font-face {
+  font-family: 'Fedra-Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fedra-Sans'),local('Fedra-Sans'),url('../fonts/Fedra-Sans.ttf') format('ttf');
+}
 
 header {
   background-color: rgba(0, 0, 0, .780392);
@@ -109,12 +148,16 @@ header {
   .header-wrapp {
     padding-top: 30px;
     h2 {
-      font-size: 22px;
+      font-size: 23px;
 
       color: #fff;
     }
     .site-name {
       padding-top: 20px;
+          padding-left: 0;
+      h2 {
+        font-family: 'Lobster';
+      }
     }
     .col-md-2 {
       padding-right: 20px;
@@ -140,12 +183,12 @@ header {
     }
     p {
       font-size: 26px;
-
+      font-family: 'Lobster';
       padding-bottom: 25px;
     }
     .header-slogan {
       button {
-        font-size: 18px;
+        font-size: 19px;
         height: 43px;
         width: 170px;
         margin-left: 50px;
@@ -174,8 +217,8 @@ nav {
     li {
       padding: 5px 20px;
       a {
-        font-size: 17px;
-
+        font-size: 19px;
+        font-family: 'OpenSans';
         color: #fff;
         &:hover {
           text-decoration: none;
@@ -224,10 +267,10 @@ article {
       align-items: center;
       p {
         font-size: 20px;
-        font-weight: 700;
-
+        font-weight: 400;
+        padding-top: 30px;
         padding-left: 10px;
-
+        color:#000;
         text-align: left;
       }
     }
@@ -343,11 +386,11 @@ article {
       border: 2px solid #2d6aa0;
       border-radius: 5px;
       p {
-        font-size: 36px;
+        font-size: 34px;
       }
       button {
-        font-size: 18px;
-
+        font-size: 19px;
+        padding-top: 12px;
         width: 170px;
         height: 45px;
         margin-bottom: 15px;
@@ -676,6 +719,7 @@ footer {
     .first-footer {
       text-align: center;
     p {
+      font-family: 'Lobster';
       color:#fff;
       font-size: 26px;
       font-weight: 700;
@@ -700,7 +744,7 @@ footer {
     text-align: center;
     color:#fff;
     padding:0;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
   }
   }
