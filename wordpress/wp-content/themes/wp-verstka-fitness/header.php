@@ -1,0 +1,78 @@
+<!doctype html>
+<html <?php language_attributes(); ?> class="no-js">
+<head>
+  <!-- saved from url=(0014)about:internet -->
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title><?php wp_title( '' ); ?><?php if ( wp_title( '', false ) ) { echo ' :'; } ?> <?php bloginfo( 'name' ); ?></title>
+
+  <!-- icons -->
+  <link href="<?php echo get_template_directory_uri(); ?>/favicon.ico" rel="shortcut icon">
+
+  <!-- css + javascript -->
+
+  <!--[if lt IE 9]>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
+<!-- wrapper -->
+<div class="wrapper">
+  <header role="banner">
+    <div class="container">
+      <div class="row header-wrapp">
+<nav id="nav-top">
+  <?php wpeHeadSecondNav(); ?>
+</nav>
+        <div class="logo col-md-2">
+          <?php if ( is_page('31') ){ } else { ?>
+            <a href="<?php echo home_url(); ?>">
+              <?php  } ?>
+              <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="<?php wp_title( '' ); ?>" title="<?php wp_title( '' ); ?>" class="logo-img">
+              <?php if ( is_page('31') ){
+              } else { ?>
+            </a>
+          <?php } ?>
+        </div><!-- /logo -->
+        <div class="col-md-2 site-name">
+          <?php if ( is_page('31') ){ } else { ?>
+                    <a href="<?php echo home_url(); ?>">
+                      <?php  } ?>
+           <h2>KOR-ONLINE.COM</h2>
+                      <?php if ( is_page('31') ){
+                      } else { ?>
+                    </a>
+                  <?php } ?>
+        </div>
+        <div class="col-md-8">
+          <nav class="nav__header col-md-12" role="navigation">
+            <?php wpeHeadNav(); ?>
+          </nav><!-- /nav -->
+        </div>
+      </div><!-- /.row -->
+      <div class="row header-second-block">
+        <div class="col-md-12 header-slogan">
+          <h6><?php the_field('slogan', 31); ?></h6>
+          <p><?php the_field('underslogan', 31); ?></p>
+          <a href="#" class="super-button">Оставьте заявку</a>
+        </div>
+        <div class="header-form">
+        <form action="#">
+          <h5>Заявка</h5>
+          <a href="#" class="close">X</a>
+            <p>Имя</p>
+          <input type="text">
+            <p>Электронная почта *</p>
+          <input type="text">
+          <button>Отправить заявку!</button>
+        </form>
+      </div><!-- header-form -->
+      </div>
+    </div><!-- /.container -->
+  </header><!-- /header -->
