@@ -1590,3 +1590,11 @@ $('.close').on('click', function(event) {
   $(this).removeClass('close-order--show')
 
 })
+
+
+/**MOBILE MENU */
+
+         jQuery(document).ready(function( $ ) {
+            $("#adaptive-menu").mmenu();
+         });
+

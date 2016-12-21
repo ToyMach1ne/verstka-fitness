@@ -30,6 +30,7 @@
 <nav id="nav-top">
   <?php wpeHeadSecondNav(); ?>
 </nav>
+<a href="#adaptive-menu" id="hamburger" class="humb-toggle-switch humb-toggle-switch__htx"><i class="fa fa-bars" aria-hidden="true"></i></a>
         <div class="logo col-md-2">
           <?php if ( is_page('31') ){ } else { ?>
             <a href="<?php echo home_url(); ?>">
@@ -55,6 +56,9 @@
             <?php wpeHeadNav(); ?>
           </nav><!-- /nav -->
         </div>
+        <nav class="mobile-menu" id="adaptive-menu">
+          <?php wpeHeadNav(); ?>
+        </nav>
       </div><!-- /.row -->
       <div class="row header-second-block">
         <div class="col-md-12 header-slogan">
@@ -62,7 +66,7 @@
           <p><?php the_field('underslogan', 31); ?></p>
           <a href="#" class="super-button">Оставьте заявку</a>
         </div>
-        <div class="header-form">
+        <div class="header-form" id="header-modal">
         <form action="#">
           <h5>Заявка</h5>
           <a href="#" class="close">X</a>
