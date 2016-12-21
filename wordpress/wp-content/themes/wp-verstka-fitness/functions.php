@@ -81,6 +81,7 @@ if (function_exists('add_theme_support')) {
   add_theme_support('post-thumbnails');
   add_image_size('large', 1200, '', true); // Large Thumbnail
   add_image_size('medium', 600, '', true); // Medium Thumbnail
+  add_image_size('blog', 356, 298, '', true); // Blog Thumbnail
   add_image_size('small', 250, '', true); // Small Thumbnail
   add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 
@@ -678,7 +679,10 @@ function disable_emojicons_tinymce( $plugins ) {
 }
 
 
-
+function new_excerpt_more( $more ) {
+  return '';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 
 
 

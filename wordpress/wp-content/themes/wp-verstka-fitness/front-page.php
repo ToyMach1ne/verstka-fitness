@@ -222,7 +222,34 @@
         </div>
       </div>
     </div><!-- nine-section -->
+    <div class="blog-section">
+          <div class="container">
+                      <h4>Блог</h4>
+            <div class="row">
+              <?php query_posts("showposts=4&cat=9"); ?>
+                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+              <div class="col-md-3">
+              <a href="<?php the_permalink(); ?>">
+                <div class="img-post-block">
+                  <?php if ( has_post_thumbnail()) :?>
+                   <?php the_post_thumbnail('thumbnail'); ?>
+                  <?php endif; ?><!-- /post thumbnail -->
+                </div>
+                </a>
+                <div class="post-descr">
+                <a href="<?php the_permalink(); ?>">
+                  <h6><?php the_title(); ?></h6>
+                  <p><?php wpeExcerpt('wpeExcerpt20'); ?></p>
+                  </a>
+                </div>
+              </div>
+              <?php endwhile; endif; ?>
+              <?php wp_reset_query(); ?>
+            </div>
+          </div>
+        </div><!-- blog-section -->
   </section><!-- /section -->
 </div><!-- /wrapper -->
+
 
 <?php get_footer(); ?>
