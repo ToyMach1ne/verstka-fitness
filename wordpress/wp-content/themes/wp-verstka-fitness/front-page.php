@@ -19,7 +19,7 @@
       </div><!-- /.container -->
     </div><!-- first-section -->
 
-    <div class="second-section">
+    <div class="second-section" id="programm">
       <div class="container">
         <div class="row">
         <h6><?php the_field('programm'); ?></h6>
@@ -93,7 +93,7 @@
       </div>
     </div><!-- photo-section -->
 
-    <div class="fourth-section">
+    <div class="fourth-section" id="cost">
       <div class="container">
         <div class="row">
           <h6><?php the_field('3rd_title'); ?></h6>
@@ -111,7 +111,7 @@
       </div>
     </div><!-- fourth-section -->
 
-    <div class="fifth-section">
+    <div class="fifth-section" id="team">
       <div class="container">
         <div class="row">
           <h6><?php the_field('5th_title'); ?></h6>
@@ -150,7 +150,7 @@
       </div>
     </div><!-- sixth-section -->
 
-    <div class="seventh-section">
+    <div class="seventh-section" id="sight">
       <div class="container">
         <div class="row">
           <h6><?php the_field('6th_title'); ?></h6>
@@ -196,7 +196,7 @@
       </div>
     </div><!-- eighth-section -->
 
-    <div class="nine-section">
+    <div class="nine-section" id="question-answers">
       <div class="container">
         <div class="row">
           <h6><?php the_field('8th_title'); ?></h6>
