@@ -23,25 +23,16 @@
       <div class="col-md-3 third-footer">
         <button class="footer-btn">Заказать обратный звонок</button>
         <div class="footer-form">
-        <form action="#">
-          <h5>Заявка на обратный звонок</h5>
-          <a href="#" class="close">X</a>
-            <p>Имя</p>
-          <input type="text">
-            <p>Электронная почта *</p>
-          <input type="text">
-          <button>Отправить заявку!</button>
-        </form>
+        <?php echo do_shortcode('[contact-form-7 id="127" title="footer form"]'); ?>
       </div><!-- footer-form -->
       </div>
-
+    <a href="#" class="scrollToTop"></a>
     </div><!-- /.row -->
   </div><!-- /.container -->
 </footer><!-- /footer -->
 <?php wp_footer(); ?>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
+
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.mmenu.all.min.js"></script>
 
 </body>

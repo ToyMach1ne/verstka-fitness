@@ -51,34 +51,39 @@ body {
         margin-top: 100px;
         text-align:left;
         p {
-          text-align: left !important;
+          font-family: "Lobster";
+          text-align: center;
               color: rgb(127, 127, 127) !important;
-              margin-left: 30px;
               padding:0;
+              padding-bottom: 0 !important;
+              margin:0;
+              padding: 5px 0 5px !important;
         }
         h5 {
         padding: 15px;
         border-bottom: 1px solid #e5e5e5;
         font-size: 18px;
         font-weight: 700;
+        color:#000;
         }
-        input {
+        .wpcf7-text {
       width: 368px;
       height: 34px;
       padding:5px;
           margin-left: 15px;
         }
-        button {
+        .wpcf7-submit {
+    border-bottom: 3px solid #245581;
+    background-color: #2d6aa1;
           width: 365px;
           height: 45px;
-          font-size: 20px;
+font-size: 20px;
     padding-top: 8px;
     padding-right: 16px;
     padding-bottom: 8px;
     padding-left: 16px;
     color: #fff;
     border-style: solid;
-    border-color: #245581;
     border-top-width: 1px;
     border-right-width: 1px;
     border-bottom-width: 3px;
@@ -87,11 +92,9 @@ body {
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
-    background-color: #2d6aa1;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
     margin-left: 15px;
     margin-bottom: 50px;
-}
         }
         .close {
           position: absolute;
@@ -106,8 +109,9 @@ body {
       }
     }
     .modal-form-order-opened {
-      display: block;
+      display: block !important;
     }
+
     .header-form {
       display: none;
     position: fixed;
@@ -131,11 +135,11 @@ body {
         margin-top: 100px;
         text-align:left;
         p {
-          text-align: left !important;
+          text-align: center;
               color: rgb(127, 127, 127) !important;
-              margin-left: 30px;
               padding:0;
               padding-bottom: 0 !important;
+              margin:0;
         }
         h5 {
         padding: 15px;
@@ -144,13 +148,13 @@ body {
         font-weight: 700;
         color:#000;
         }
-        input {
+        .wpcf7-text {
       width: 368px;
       height: 34px;
       padding:5px;
           margin-left: 15px;
         }
-        button {
+        .wpcf7-submit {
               border-color: #be0404;
               background-color: #ed0505;
           width: 365px;
@@ -186,6 +190,10 @@ font-size: 20px;
         }
       }
     }
+    .header-form-opened {
+      display: block;
+    }
+
     .footer-form {
       display: none;
     position: fixed;
@@ -201,7 +209,7 @@ font-size: 20px;
         position:relative;
         background-color: #fff;
         width: 400px;
-        height: 280px;
+        height: 310px;
         box-shadow: 0 5px 15px rgba(0,0,0,.5);
         border: 1px solid rgba(0,0,0,.2);
         border-radius: 6px;
@@ -209,24 +217,30 @@ font-size: 20px;
         margin-top: 100px;
         text-align:left;
         p {
-          text-align: left !important;
+          font-family: "Lobster";
+          text-align: center;
               color: rgb(127, 127, 127) !important;
-              margin-left: 30px;
               padding:0;
+              padding-bottom: 0 !important;
+              margin:0;
+              padding: 5px 0 5px !important;
         }
         h5 {
         padding: 15px;
         border-bottom: 1px solid #e5e5e5;
         font-size: 18px;
         font-weight: 700;
+        color:#000;
         }
-        input {
+        .wpcf7-text {
       width: 368px;
       height: 34px;
       padding:5px;
           margin-left: 15px;
         }
-        button {
+        .wpcf7-submit {
+    border-bottom: 3px solid #245581;
+    background-color: #2d6aa1;
           width: 365px;
           height: 45px;
 font-size: 20px;
@@ -236,7 +250,6 @@ font-size: 20px;
     padding-left: 16px;
     color: #fff;
     border-style: solid;
-    border-color: #be0404;
     border-top-width: 1px;
     border-right-width: 1px;
     border-bottom-width: 3px;
@@ -245,7 +258,6 @@ font-size: 20px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
-        background-color: #ed0505;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
     margin-left: 15px;
     margin-bottom: 50px;
@@ -262,6 +274,10 @@ font-size: 20px;
         }
       }
     }
+    .footer-form-opened {
+      display: block !important;
+    }
+  }
 h1,
 h2,
 h3,
@@ -1028,6 +1044,17 @@ article {
     right: 5%;
     bottom: -100px;
       }
+      &:after {
+        display: block;
+    content: '';
+    width: 400px;
+    height: 510px;
+    background-image: url(../img/fitness_split_jerk.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0%;
+    bottom: -248px;
+      }
   .container {
     height: 100%;
     h4 {
@@ -1047,12 +1074,18 @@ article {
     .col-md-3 {
       text-align: center;
       &:hover {
+        box-shadow: 0 0 10px 4px #333;
         .img-post-block {
           &:before {
                opacity: 0.3;
           }
           img {
             transform: scale(1.2);
+          }
+        }
+        .post-descr {
+          p {
+            color:#ef9c4a;
           }
         }
       }
@@ -1107,6 +1140,8 @@ article {
 .category-content {
       background-image: url(../img/fitness-background-4.jpg);
        background-size: cover;
+       padding-bottom: 0;
+       margin-bottom: 50px;
        h1 {
         font-size: 200%;
         font-weight: 700;
@@ -1220,17 +1255,20 @@ article {
 }
 .archive {
   footer {
-  height: 135px;
+  height: 250px;
   margin: $footer_margin auto 0;
 
   background-color: #fff;
+.container {
+    height: 100%;
+  }
   .row {
     display: flex;
+    align-items:center;
     height: 135px;
-
+    height: 100%;
     align-items: center;
     .first-footer {
-      padding-top: 60px;
       text-align: center;
       p {
         font-family: 'Lobster';
@@ -1243,7 +1281,6 @@ article {
       }
     }
     .second-footer {
-      padding-top: 60px;
       text-align: center;
       p {
         font-size: 16px;
@@ -1255,20 +1292,21 @@ article {
       }
     }
     .third-footer {
-      padding-top: 60px;
       text-align: center;
-      button {
-        font-size: 15px;
+      .footer-btn {
+        font-family: 'Lobster';
+        font-size: 16px;
         font-weight: 400;
-
+        background-color: rgb(239, 156, 74);
         width: 200px;
-        height: 32px;
+        height: 45px;
         padding: 0;
-
         text-align: center;
-
         color: #000;
-        border-radius: 0;
+        border-radius: 10px;
+        &:hover {
+          background-color: darken(rgb(239, 156, 74), 15%);
+        }
       }
     }
   }
@@ -1524,6 +1562,8 @@ height: 250px;
     }
   }
 }
+
+/* Mobile Menu */
 #adaptive-menu {
   display: none;
 }
@@ -1561,6 +1601,8 @@ height: 250px;
     justify-content: flex-end;
   }
 }
+
+
 .bounceInLeft {
   -webkit-animation-name: bounceInLeft;
   animation-name: bounceInLeft;
@@ -1569,6 +1611,30 @@ height: 250px;
   -webkit-animation-name: bounceInRight;
   animation-name: bounceInRight;
 }
+
+
+/* Back to Top */
+.scrollToTop{
+  width:50px;
+  height:80px;
+  text-align:center;
+  background: whiteSmoke;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  position:fixed;
+  top:800px;
+  right:250px;
+  display:none;
+  background: url(../img/arrow_up.png) no-repeat 0px 20px;
+  z-index:1;
+}
+.scrollToTop:hover{
+  text-decoration:none;
+}
+
+
+
 
 
 @import 'fonts/font_fontawesome';

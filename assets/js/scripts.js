@@ -1569,7 +1569,7 @@ $(document).ready(function() {
   });
 
 });
-
+//*Modal form */
 
 $('.super-button').on('click', function(event) {
   var $orderButton = $('.header-form');
@@ -1592,9 +1592,71 @@ $('.close').on('click', function(event) {
 })
 
 
+
+$('.font-text').on('click', function(event) {
+  var $orderButton = $('.modal-form-order');
+
+  if ($(this).hasClass('font-text-opened')) {
+    $orderButton.removeClass('modal-form-order-opened');
+    $(this).removeClass('font-text-opened')
+    $('.close').removeClass('close-order--show')
+  } else {
+    $orderButton.addClass('modal-form-order-opened');
+    $(this).addClass('font-text-opened')
+    $('.close').addClass('close-order--show')
+  }
+})
+$('.close').on('click', function(event) {
+  $('.modal-form-order').removeClass('modal-form-order-opened');
+  $('.font-text').removeClass('font-text-opened')
+  $(this).removeClass('close-order--show')
+
+})
+
+$('.footer-btn').on('click', function(event) {
+  var $orderButton = $('.footer-form');
+
+  if ($(this).hasClass('footer-btn-opened')) {
+    $orderButton.removeClass('footer-form-opened');
+    $(this).removeClass('footer-btn-opened')
+    $('.close').removeClass('close-order--show')
+  } else {
+    $orderButton.addClass('footer-form-opened');
+    $(this).addClass('footer-btn-opened')
+    $('.close').addClass('close-order--show')
+  }
+})
+$('.close').on('click', function(event) {
+  $('.footer-form').removeClass('footer-form-opened');
+  $('.footer-btn').removeClass('footer-btn-opened')
+  $(this).removeClass('close-order--show')
+
+})
+
+
 /**MOBILE MENU */
 
          jQuery(document).ready(function( $ ) {
             $("#adaptive-menu").mmenu();
          });
 
+/**Back to Top */
+
+$(document).ready(function(){
+
+    //Check to see if the window is top if not then display button
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.scrollToTop').fadeIn();
+        } else {
+            $('.scrollToTop').fadeOut();
+        }
+    });
+
+    //Click event to scroll to top
+    $('.scrollToTop').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+
+});

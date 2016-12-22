@@ -107,15 +107,7 @@
         </div>
       </div>
       <div class="modal-form-order">
-        <form action="#">
-          <h5>Заявка</h5>
-          <a href="#" class="close">X</a>
-            <p>Имя</p>
-          <input type="text">
-            <p>Электронная почта *</p>
-          <input type="text">
-          <button>Отправить заявку!</button>
-        </form>
+        <?php echo do_shortcode('[contact-form-7 id="76" title="order form"]'); ?>
       </div>
     </div><!-- fourth-section -->
 

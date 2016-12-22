@@ -67,15 +67,7 @@
           <a href="#" class="super-button">Оставьте заявку</a>
         </div>
         <div class="header-form" id="header-modal">
-        <form action="#">
-          <h5>Заявка</h5>
-          <a href="#" class="close">X</a>
-            <p>Имя</p>
-          <input type="text">
-            <p>Электронная почта *</p>
-          <input type="text">
-          <button>Отправить заявку!</button>
-        </form>
+        <?php echo do_shortcode('[contact-form-7 id="112" title="header-form"]'); ?>
       </div><!-- header-form -->
       </div>
     </div><!-- /.container -->
