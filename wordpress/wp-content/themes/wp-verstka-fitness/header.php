@@ -45,7 +45,7 @@
           <?php if ( is_page('31') ){ } else { ?>
                     <a href="<?php echo home_url(); ?>">
                       <?php  } ?>
-           <h2>KOR-ONLINE.COM</h2>
+           <h2>split4fit</h2>
                       <?php if ( is_page('31') ){
                       } else { ?>
                     </a>
