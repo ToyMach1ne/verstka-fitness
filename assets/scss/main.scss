@@ -479,7 +479,20 @@ picture {
 
   src: local('ColabReg'),local('ColabReg'),url('../fonts/ColabReg.otf') format('otf');
 }
+@font-face {
+  font-family: 'Arian AMU Mono';
+  font-weight: 400;
+  font-style: normal;
 
+  src: local('Arian AMU Mono'),local('Arian AMU Mono-Regular'),url('../fonts/arianamumono.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Arian AMU Mono Bold';
+  font-weight: 700;
+  font-style: bold;
+
+  src: local('Arian AMU Mono'),local('Arian AMU Mono-Bold'),url('../fonts/arianamumonobold.woff2') format('woff2');
+}
 header {
   background-color: rgba(0, 0, 0, .780392);
   background-image: url(../img/header-bg-2.jpg);
@@ -1136,40 +1149,9 @@ article {
   }
   .blog-section {
     position: relative;
-
     height: 450px;
-
-    background: linear-gradient(to bottom,#000,#fff);
-    &:before {
-      position: absolute;
-      right: 5%;
-      bottom: -100px;
-
-      display: block;
-
-      width: 230px;
-      height: 400px;
-
-      content: '';
-
-      background-image: url(../img/prised.png);
-      background-repeat: no-repeat;
-    }
-    &:after {
-      position: absolute;
-      bottom: -248px;
-      left: 0;
-
-      display: block;
-
-      width: 400px;
-      height: 510px;
-
-      content: '';
-
-      background-image: url(../img/fitness_split_jerk.svg);
-      background-repeat: no-repeat;
-    }
+    background-color: #fff;
+    border-bottom: 4px solid #434343;
     .container {
       height: 100%;
       h4 {
@@ -1181,7 +1163,7 @@ article {
 
         text-align: center;
 
-        color: #fff;
+        color: #000;
       }
       .row {
         display: flex;
@@ -1410,10 +1392,10 @@ article {
 }
 .archive {
   footer {
-    height: 250px;
+    height: 400px;
     margin: $footer_margin auto 0;
 
-    background-color: #fff;
+    background-color: #000;
     .container {
       height: 100%;
     }
@@ -1450,7 +1432,7 @@ article {
       }
       .third-footer {
         text-align: center;
-        .footer-btn {
+        /* .footer-btn {
           font-family: 'Lobster';
           font-size: 16px;
           font-weight: 400;
@@ -1467,17 +1449,17 @@ article {
           &:hover {
             background-color: darken(rgb(239, 156, 74), 15%);
           }
-        }
+        } */
       }
     }
   }
 }
 
 footer {
-  height: 250px;
+  height: 400px;
   margin: $footer_margin auto 0;
 
-  background: linear-gradient(to top, #000, #fff);
+  background-color: #1e1e1e;
   .container {
     height: 100%;
   }
@@ -1514,23 +1496,75 @@ footer {
     }
     .third-footer {
       text-align: center;
-      .footer-btn {
-        font-family: 'Lobster';
-        font-size: 16px;
-        font-weight: 400;
-
-        width: 200px;
-        height: 45px;
-        padding: 0;
-
-        text-align: center;
-
-        color: #000;
-        border-radius: 10px;
-        background-color: rgb(239, 156, 74);
-        &:hover {
-          background-color: darken(rgb(239, 156, 74), 15%);
+      form {
+        h5 {
+          font-family: 'Lobster';
+          text-align:left;
+          text-transform: uppercase;
+          color:#fff;
+          font-size: 20px;
+          margin-bottom: 20px;
         }
+        input {
+          margin-bottom: 25px;
+
+          border: none;
+          border-bottom: 1px solid #6d6c6c;
+          background: none;
+          &::-webkit-input-placeholder {
+            font-family: 'Lobster';
+            font-size: 20px;
+
+            color: #8e2223;
+          }
+          &:focus {
+            box-shadow: none;
+          }
+        }
+        button {
+          float: left;
+              width: 46%;
+    height: 35px;
+    border-radius: 25px;
+    background-color: #434343;
+    line-height: 0.5;
+    color:#fff;
+    font-family: 'Lobster';
+    font-size: 18px;
+    &:hover {
+      background-color: darken(#434343, 5%);
+      color:#8e2223;
+    }
+        }
+        .first-footer-input {
+          display: inline-block;
+
+          width: 46%;
+          margin-right: 30px;
+        }
+        .second-footer-input {
+          display: inline-block;
+
+          width:46%;
+        }
+      }
+    }
+    .footer-btn {
+      font-family: 'Lobster';
+      font-size: 16px;
+      font-weight: 400;
+
+      width: 200px;
+      height: 45px;
+      padding: 0;
+
+      text-align: center;
+
+      color: #000;
+      border-radius: 10px;
+      background-color: rgb(239, 156, 74);
+      &:hover {
+        background-color: darken(rgb(239, 156, 74), 15%);
       }
     }
   }
@@ -1547,9 +1581,13 @@ footer {
       li {
         padding: 5px 0;
         a {
-          text-decoration: none;
+          font-family: 'Arian AMU Mono Bold';
+          font-size: 18px;
 
-          color: #000;
+          text-decoration: none;
+          text-transform: uppercase;
+
+          color: #fff;
           &:hover {
             text-decoration: none;
 
@@ -1559,20 +1597,28 @@ footer {
       }
     }
   }
-  .col-md-5 {
+  .col-md-6 {
     text-align: center;
+        height: 100%;
+        padding-top: 15px;
     .footer-photo {
       display: inline-block;
-
       padding: 0 20px;
+      height: 100%;
+    width: 100%;
+    padding: 15px;
       img {
-        width: 100px;
-        height: 100px;
-
-        border-radius: 50%;
-      }
+            width: 100%;
+    height: auto;
+        min-height: 92%;
+            border-radius: 10px;
+    border: 1px dashed #8e2223
+          }
       p {
         padding-top: 5px;
+        color:#fff;
+        font-size: 20px;
+         font-family: 'Lobster';
       }
     }
   }
@@ -1956,14 +2002,6 @@ footer {
 /* MEDIA QUERY */
 @media (max-width:1600px) {
   .main-content {
-    .blog-section {
-      &:before {
-        display: none;
-      }
-      &:after {
-        display: none;
-      }
-    }
   }
   .scrollToTop {
     right: 1%;
@@ -2127,12 +2165,6 @@ footer {
     .blog-section {
       height: 1250px;
       margin-bottom: 100px;
-      &:before {
-        display: none;
-      }
-      &:after {
-        display: none;
-      }
       .container {
         .row {
           display: flex;

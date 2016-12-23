@@ -3,7 +3,7 @@
 <div class="container">
   <div class="row">
     <h1>Блог</h1>
-    <?php query_posts("showposts=6&cat=9"); ?>
+    <?php query_posts("showposts=6"); ?>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <div class="col-md-4">
       <div class="post-block-img">
