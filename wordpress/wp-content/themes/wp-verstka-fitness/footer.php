@@ -24,13 +24,7 @@
       </div>
 
       <div class="col-md-5 third-footer">
-        <form action="#">
-          <h5>Обратный звонок</h5>
-          <input type="text" placeholder="Имя" class="first-footer-input" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Имя'">
-          <input type="text" placeholder="Телефон" class="second-footer-input" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Телефон'">
-          <input type="text" placeholder="Почта" class="third-footer-input" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Почта'">
-          <button>Перезвонить</button>
-        </form>
+        <?php echo do_shortcode('[contact-form-7 id="209" title="footer-form"]'); ?>
       </div>
     <a href="#" class="scrollToTop"></a>
     </div><!-- /.row -->
