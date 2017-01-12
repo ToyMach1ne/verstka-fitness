@@ -25,6 +25,20 @@
 <!-- wrapper -->
 <div class="wrapper">
   <header role="banner">
+  <div class="footer-social">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul>
+            <li><a href="https://vk.com/id18209380" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.facebook.com/groups/478491599012984/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true" target="_blank"></i></a></li>
+            <li><a href="https://www.instagram.com/eugene.korchun/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
     <div class="container">
       <div class="row header-wrapp">
 <nav id="nav-top">
@@ -57,7 +71,7 @@
           </nav><!-- /nav -->
         </div>
         <nav class="mobile-menu" id="adaptive-menu">
-          <?php wpeHeadNav(); ?>
+          <?php wpeHeadSecondNav(); ?>
         </nav>
       </div><!-- /.row -->
       <div class="row header-second-block">

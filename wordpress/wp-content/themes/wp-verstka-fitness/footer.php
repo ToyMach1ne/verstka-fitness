@@ -29,6 +29,20 @@
     <a href="#" class="scrollToTop"></a>
     </div><!-- /.row -->
   </div><!-- /.container -->
+  <div class="footer-social">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul>
+            <li><a href="https://vk.com/id18209380" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.facebook.com/groups/478491599012984/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true" ></i></a></li>
+            <li><a href="https://www.instagram.com/eugene.korchun/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer><!-- /footer -->
 <?php wp_footer(); ?>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>

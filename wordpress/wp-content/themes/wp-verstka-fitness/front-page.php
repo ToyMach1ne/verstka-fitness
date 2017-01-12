@@ -186,12 +186,7 @@
         <div class="row">
           <h6><?php the_field('7th_title'); ?></h6>
           <p class="eight-underslogan"><?php the_field('7th_undertitle'); ?></p>
-          <form action="#">
-            <input type="text" placeholder="Ваше имя *" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ваше имя *'">
-            <input type="text" placeholder="Электронная почта *" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Электронная почта *'">
-            <button>Оставте заявку</button>
-            <p>Все ваши данные конфиденциальны. Мы не передаем ваши данные третьим лицам и не рассылаем спам.</p>
-          </form>
+          <?php echo do_shortcode('[contact-form-7 id="218" title="questionnaire-form"]'); ?>
         </div>
       </div>
     </div><!-- eighth-section -->

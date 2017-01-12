@@ -20,14 +20,7 @@
 
           <div class="col-md-12">
             <div class="inner-form">
-            <form action="#">
-            <h6>Оформить заявку</h6>
-              <input type="text" placeholder="Имя" class="first-contact-form-input">
-              <input type="text" placeholder="Телефон" class="second-contact-form-input">
-              <input type="text" placeholder="Почта" class="third-contact-form-input">
-              <textarea cols="30" rows="10" placeholder="Ваше сообшение" class="contact-message"></textarea>
-              <button class="victoria-four">Записатся</button>
-            </form>
+            <?php echo do_shortcode('[contact-form-7 id="217" title="inner page form"]'); ?>
           </div>
           </div><!-- col-md-12 -->
         </div><!-- row -->
