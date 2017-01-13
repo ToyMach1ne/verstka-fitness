@@ -81,6 +81,7 @@ if (function_exists('add_theme_support')) {
   add_theme_support('post-thumbnails');
   add_image_size('large', 1200, '', true); // Large Thumbnail
   add_image_size('medium', 600, '', true); // Medium Thumbnail
+  add_image_size('blog', 476, 300, '', true); // Large Thumbnail
   add_image_size('blog', 356, 298, '', true); // Blog Thumbnail
   add_image_size('small', 250, '', true); // Small Thumbnail
   add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
@@ -109,30 +110,7 @@ function wpeHeadNav() {
     'after'           => '',
     'link_before'     => '',
     'link_after'      => '',
-    'items_wrap'      => '<ul class="headnav">%3$s</ul>',
-    'depth'           => 0,
-    'walker'          => ''
-    )
-  );
-}
-// WPE head navigation
-function wpeHeadSecondNav() {
-  wp_nav_menu(
-  array(
-    'theme_location'  => 'header-second-menu',
-    'menu'            => '',
-    'container'       => 'div',
-    'container_class' => 'menu-{menu slug}-container',
-    'container_id'    => '',
-    'menu_class'      => 'menu',
-    'menu_id'         => '',
-    'echo'            => true,
-    'fallback_cb'     => 'wp_page_menu',
-    'before'          => '',
-    'after'           => '',
-    'link_before'     => '',
-    'link_after'      => '',
-    'items_wrap'      => '<ul class="second-nav">%3$s</ul>',
+    'items_wrap'      => '<ul id="menu-main-nav">%3$s</ul>',
     'depth'           => 0,
     'walker'          => ''
     )
@@ -189,7 +167,6 @@ add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
 function register_html5_menu() {
   register_nav_menus(array(
     'header-menu' => __('Меню в шапке', 'wpeasy'),
-    'header-second-menu' => __('Меню в шапке 2', 'wpeasy'),
     'sidebar-menu' => __('Меню в сайдбар', 'wpeasy'),
     'footer-menu' => __('Меню в подвал', 'wpeasy')
   ));
