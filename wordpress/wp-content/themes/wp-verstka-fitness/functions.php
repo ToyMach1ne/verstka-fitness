@@ -82,6 +82,7 @@ if (function_exists('add_theme_support')) {
   add_image_size('large', 1200, '', true); // Large Thumbnail
   add_image_size('medium', 600, '', true); // Medium Thumbnail
   add_image_size('blog', 476, 300, '', true); // Large Thumbnail
+  add_image_size('product', 400, 414, '', true); // Large Thumbnail
   add_image_size('blog', 356, 298, '', true); // Blog Thumbnail
   add_image_size('small', 250, '', true); // Small Thumbnail
   add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
@@ -662,7 +663,86 @@ function new_excerpt_more( $more ) {
 add_filter('excerpt_more', 'new_excerpt_more');
 
 
+add_action( 'init', 'post_type_product' );
+function post_type_product() {
 
+  $labels = array(
+    'name' => 'Спортпит',
+    'singular_name' => 'Спортпит',
+    'add_new' => 'Add',
+    'add_new_item' => 'Add',
+    'edit' => 'Edit',
+    'edit_item' => 'Edit',
+    'new-item' => 'Add',
+    'view' => 'View',
+    'view_item' => 'View',
+    'search_items' => 'Search',
+    'not_found' => 'Not Found',
+    'not_found_in_trash' => 'Not Found',
+    'parent' => 'Parent'
+  );
+
+  $args = array(
+    'description' => 'product Post Type',
+    'show_ui' => true,
+    'menu_position' => 5,
+    'exclude_from_search' => false,
+    'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'capability_type' => 'post',
+    'hierarchical' => false,
+    'supports' => array('title','editor','thumbnail','excerpt','comments'),
+    'has_archive' => true,
+    'rewrite' => array( 'slug' => 'product' ),
+    // https://developer.wordpress.org/resource/dashicons/
+    'menu_icon' => 'dashicons-admin-site',
+    'show_in_rest' => true
+  );
+
+  register_post_type( 'product' , $args );
+}
+
+
+add_action( 'init', 'post_type_programm' );
+function post_type_programm() {
+
+  $labels = array(
+    'name' => 'Программа',
+    'singular_name' => 'Программа',
+    'add_new' => 'Add',
+    'add_new_item' => 'Add',
+    'edit' => 'Edit',
+    'edit_item' => 'Edit',
+    'new-item' => 'Add',
+    'view' => 'View',
+    'view_item' => 'View',
+    'search_items' => 'Search',
+    'not_found' => 'Not Found',
+    'not_found_in_trash' => 'Not Found',
+    'parent' => 'Parent'
+  );
+
+  $args = array(
+    'description' => 'programm Post Type',
+    'show_ui' => true,
+    'menu_position' => 5,
+    'exclude_from_search' => false,
+    'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'capability_type' => 'post',
+    'hierarchical' => false,
+    'supports' => array('title','editor','thumbnail','excerpt','comments'),
+    'has_archive' => true,
+    'rewrite' => array( 'slug' => 'programm' ),
+    // https://developer.wordpress.org/resource/dashicons/
+    'menu_icon' => 'dashicons-welcome-write-blog',
+    'show_in_rest' => true
+  );
+
+  register_post_type( 'programm' , $args );
+}
 
 
 ?>

@@ -1,33 +1,40 @@
 <?php get_header(); ?>
-<section role="main" class="category-content">
+<div class="blog-posts">
 <div class="container">
   <div class="row">
-    <h1>Блог</h1>
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    <div class="col-md-4">
-      <div class="post-block-img">
-        <a rel="nofollow" class="feature-img" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-            <?php if ( has_post_thumbnail()) :
-              the_post_thumbnail('blog');
-            else: ?>
-              <img src="<?php echo catchFirstImage(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
-            <?php endif; ?>
-          </a><!-- /post thumbnail -->
-        <div class="text-container">
-          <h6><?php the_title(); ?></h6>
-          <a href="<?php the_permalink(); ?>">read more</a>
+    <div class="post-wrapper">
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <div class="post-preview">
+                    <a href="<?php the_permalink(); ?>">
+                      <?php if ( has_post_thumbnail()) :?>
+                        <?php the_post_thumbnail('blog'); ?>
+                      <?php endif; ?><!-- /post thumbnail -->
+                    </a>
+            <h2>
+                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" rel="bookmark">
+                    <?php the_title(); ?>
+                </a>
+            </h2>
+            <p><?php wpeExcerpt('wpeExcerpt40'); ?>
+              <a href="<?php the_permalink(); ?>" class="more-link">Read more ><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </p>
+            <ul class="post-meta">
+                <li>
+                    <time datetime="2017-01-13T10:01:18+00:00"><?php the_time('j F Y'); ?></time>
+                </li>
+                <li>
+                    <a href="<?php the_permalink(); ?>" class="read-more">Read This Post</a>
+                </li>
+            </ul>
         </div>
-      </div>
-      <div class="post-title">
-        <h5><?php the_title(); ?></h5>
-        <p><?php wpeExcerpt('wpeExcerpt20'); ?></p>
-      </div>
+          <?php endwhile; endif; ?>
+          <?php wp_reset_query(); ?>
+
     </div>
-     <?php endwhile; endif; ?>
-  </div><!-- row -->
-  <?php get_template_part('pagination'); ?>
+  </div>
 </div>
-</section><!-- category-content -->
-  </div><!-- wrapper -->
+
+
+</div>
   <?php get_footer(); ?>
 
