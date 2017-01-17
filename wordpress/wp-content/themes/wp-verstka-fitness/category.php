@@ -5,18 +5,20 @@
     <div class="post-wrapper">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div class="post-preview">
-                    <a href="<?php the_permalink(); ?>">
-                      <?php if ( has_post_thumbnail()) :?>
-                        <?php the_post_thumbnail('blog'); ?>
-                      <?php endif; ?><!-- /post thumbnail -->
-                    </a>
+          <div class="post-thumbnail">
+            <a href="<?php the_permalink(); ?>">
+                        <?php if ( has_post_thumbnail()) :?>
+                          <?php the_post_thumbnail('blog'); ?>
+                        <?php endif; ?><!-- /post thumbnail -->
+             </a>
+          </div>
             <h2>
                 <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" rel="bookmark">
                     <?php the_title(); ?>
                 </a>
             </h2>
             <p><?php wpeExcerpt('wpeExcerpt40'); ?>
-              <a href="<?php the_permalink(); ?>" class="more-link">Read more ><span class="glyphicon glyphicon-chevron-right"></span></a>
+              <a href="<?php the_permalink(); ?>" class="more-link">Read more<span class="glyphicon glyphicon-chevron-right"></span></a>
             </p>
             <ul class="post-meta">
                 <li>
@@ -31,6 +33,11 @@
           <?php wp_reset_query(); ?>
 
     </div>
+    <?php get_template_part('pagination'); ?>
+    <form class="search" method="get" action="<?php echo home_url(); ?>" role="search">
+      <input class="search-input" type="search" name="s" placeholder="To search, type and hit enter.">
+      <button class="search-submit" type="submit" role="button"><?php _e( 'Search', 'wpeasy' ); ?></button>
+    </form><!-- /search -->
   </div>
 </div>
 
