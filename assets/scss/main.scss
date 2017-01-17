@@ -1811,13 +1811,16 @@ header {
   }
 }
 
-.page{
+.page-id-320, .page-id-323 {
+  .x-section {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
   #x-section-1 {
     padding-top: 30px;
     padding-right: 0 !important;
     padding-bottom: 100px;
     padding-left: 0 !important;
-
     background-image: none;
     .x-container {
       .thumb-post-img {

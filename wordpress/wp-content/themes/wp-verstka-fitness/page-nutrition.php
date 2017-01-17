@@ -5,7 +5,7 @@
 
                     <?php query_posts(array( 'post_type' => 'product','showposts' => 5, 'orderby' => 'title', 'order' => 'ASC' ) ); ?>
                     <?php while (have_posts()) : the_post(); ?>
-            <div id="x-section-1" class="x-section">
+            <div id="x-section-1 first-section" class="x-section">
                 <div class="x-container max width">
                     <div class="x-column x-sm x-1-1">
                         <h2 class="h-custom-headline ebook-header h2"><span><?php the_title(); ?></span></h2></div>

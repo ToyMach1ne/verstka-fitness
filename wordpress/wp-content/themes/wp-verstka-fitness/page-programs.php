@@ -2,7 +2,7 @@
 <div class="x-main full" role="main">
     <article id="post-4786" class="post-4786 page type-page status-publish hentry no-post-thumbnail">
         <div class="entry-content content">
-            <div id="x-section-1" class="x-section">
+            <div id="x-section-1 first-section" class="x-section">
                 <div class="x-container max width">
                     <div class="x-column x-sm x-1-1">
                         <h2 class="h-custom-headline ebook-header h2"><span>THE <b>6 WEEK SHRED</b></span></h2></div>
