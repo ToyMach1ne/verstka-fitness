@@ -17,38 +17,7 @@
                         <div class="x-container">
                             <div class="x-column x-sm x-1-1">
                                 <div class="x-raw-content">
-                                    <form accept-charset="UTF-8" action="https://nh247.infusionsoft.com/app/form/process/8483d3a103f616f1d916b28eae45c046" class="infusion-form" method="POST">
-                                        <input name="inf_form_xid" type="hidden" value="8483d3a103f616f1d916b28eae45c046">
-                                        <input name="inf_form_name" type="hidden" value="Contact form on Scottlaidler.com">
-                                        <input name="infusionsoft_version" type="hidden" value="1.48.0.48">
-                                        <div class="infusion-field">
-                                            <label for="inf_field_FirstName">First Name *</label>
-                                            <input class="infusion-field-input-container" id="inf_field_FirstName" name="inf_field_FirstName" type="text">
-                                        </div>
-                                        <div class="infusion-field">
-                                            <label for="inf_field_LastName">Last Name *</label>
-                                            <input class="infusion-field-input-container" id="inf_field_LastName" name="inf_field_LastName" type="text">
-                                        </div>
-                                        <div class="infusion-field">
-                                            <label for="inf_field_Email">Email *</label>
-                                            <input class="infusion-field-input-container" id="inf_field_Email" name="inf_field_Email" type="text">
-                                        </div>
-                                        <div class="infusion-field">
-                                            <label for="inf_custom_Phone">Phone</label>
-                                            <input class="infusion-field-input-container" id="inf_custom_Phone" name="inf_custom_Phone" type="text">
-                                        </div>
-                                        <div class="infusion-field">
-                                            <label for="inf_custom_City0">City</label>
-                                            <input class="infusion-field-input-container" id="inf_custom_City0" name="inf_custom_City0" type="text">
-                                        </div>
-                                        <div class="infusion-field">
-                                            <label for="inf_custom_Contactformnotes">Message</label>
-                                            <textarea cols="24" id="inf_custom_Contactformnotes" name="inf_custom_Contactformnotes" rows="5"> </textarea>
-                                        </div>
-                                        <div class="infusion-submit">
-                                            <input type="submit" value="Submit" class="blue">
-                                        </div>
-                                    </form>
+                                    <?php echo do_shortcode('[contact-form-7 id="345" title="contact-page-form"]'); ?>
                                     <script type="text/javascript" src="https://nh247.infusionsoft.com/app/webTracking/getTrackingCode?trackingId=f98574fe1580d4d3ab5aeb1b55b4ed52"></script>
                                 </div>
                             </div>

@@ -1707,30 +1707,30 @@ $(document).ready(function() {
 
 $('.super-button').on('click', function(e) {
     e.preventDefault();
-    $('.header-form').addClass('header-form-opened')
+    $('.modal-form').addClass('modal-form-opened')
 })
 $('.close-order--show').on('click', function(e) {
     e.preventDefault();
-    $('.header-form').removeClass('header-form-opened')
+    $('.modal-form').removeClass('modal-form-opened')
 })
-$('.header-form').on('click', function(e) {
+$('.modal-form').on('click', function(e) {
 
 
     if (e.target !== this) {
         return;
     }
 
-    $('.header-form').removeClass('header-form-opened')
+    $('.modal-form').removeClass('modal-form-opened')
 })
 
 
-$('.font-text').on('click', function(e) {
+$('.close-modal').on('click', function(e) {
     e.preventDefault();
-    $('.modal-form-order').addClass('modal-form-order-opened')
+    $('.modal-form').addClass('modal-form-opened')
 })
-$('.close-order--show').on('click', function(e) {
+$('.close-modal').on('click', function(e) {
     e.preventDefault();
-    $('.modal-form-order').removeClass('modal-form-order-opened')
+    $('.modal-form').removeClass('modal-form-opened')
 })
 $('.modal-form-order').on('click', function(e) {
 
@@ -1739,7 +1739,7 @@ $('.modal-form-order').on('click', function(e) {
         return;
     }
 
-    $('.modal-form-order').removeClass('modal-form-order-opened')
+    $('.modal-form').removeClass('modal-form-opened')
 })
 
 

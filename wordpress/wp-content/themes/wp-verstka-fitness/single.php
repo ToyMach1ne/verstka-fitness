@@ -2,9 +2,6 @@
    <div class="x-container max width offset">
     <div class="x-main left" role="main">
         <article id="post-10145" class="post-10145 post type-post status-publish format-standard has-post-thumbnail hentry category-mind">
-            <div class="entry-featured">
-                <div class="entry-thumb"><img width="675" height="350" src="http://scottlaidler.com/wp-content/uploads/2016/11/meditation-desktop.jpg?503b89" class="attachment-entry wp-post-image" alt="Meditation With Scott Laidler"></div>
-            </div>
             <div class="entry-wrap">
                 <div class="entry-header">
                     <h1 class="entry-title"><?php the_title(); ?></h1>
