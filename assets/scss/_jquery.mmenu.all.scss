@@ -39,6 +39,13 @@
     text-decoration: none;
   }
 }
+.mm-listview {
+  li {
+    &:hover {
+      background-color: lighten(#f3f3f3, 5%);
+    }
+  }
+}
 
 .mm-listview {
   .mm-next:before, > li:not(.mm-divider):after {

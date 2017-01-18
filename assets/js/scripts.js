@@ -1680,6 +1680,8 @@ jQuery(document).ready(function($) {
     $("#adaptive-menu").mmenu();
 });
 
+/**End MOBILE MENU */
+
 /**Back to Top */
 
 $(document).ready(function() {

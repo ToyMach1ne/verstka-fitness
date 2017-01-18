@@ -29,13 +29,18 @@
                 <span class="icon-bar"></span>
               </button>
               <a class="navbar-brand" href="<?php echo home_url(); ?>" title="Онлайн фитнесс Split4Fit"
-              rel="home"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Split4Fit" class="logo-img">
-              Split4Fit
+              rel="home">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Split4Fit" class="logo-img">
+              <p>Split4Fit</p>
               </a>
             </div>
             <div class="collapse navbar-collapse main-nav">
               <?php wpeHeadNav(); ?>
             </div>
+            <a href="#adaptive-menu" id="hamburger" class="humb-toggle-switch humb-toggle-switch__htx"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <nav class="mobile-menu" id="adaptive-menu">
+          <?php wpeHeadSecondNav(); ?>
+        </nav>
           </nav>
         </div>
       </div>
