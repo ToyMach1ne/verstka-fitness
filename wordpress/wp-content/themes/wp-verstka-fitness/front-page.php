@@ -144,8 +144,8 @@
                       </div>
                     </div>
                     <div class="x-feature-box-content">
-                      <h4 class="x-feature-box-title"><? the_sub_field('adv_name'); ?></h4>
-                      <p class="x-feature-box-text"><? the_sub_field('adv_desc'); ?></p>
+                      <h4 class="x-feature-box-title"><?php the_sub_field('adv_name'); ?></h4>
+                      <p class="x-feature-box-text"><?php the_sub_field('adv_desc'); ?></p>
                     </div>
                   </li>
                    <?php endwhile; endif; ?>
