@@ -2759,7 +2759,7 @@ header {
 
             border: 1px solid #e4e5e6;
             &:hover {
-              border: 2px solid #ff7800;
+              border: 1px solid #ff7800;
             }
             .recent-thumb {
               margin-bottom: 20px;
@@ -2827,7 +2827,7 @@ header {
 
                   background-image: url(../img/cart.png);
                   background-repeat: no-repeat;
-                  background-position: center -30px;
+                  background-position: 170px -30px;
                   span {
                     font-size: 22px;
                     font-weight: 200;
@@ -3069,6 +3069,128 @@ header {
   }
 }
 
+.page-id-323 {
+.nutrition-page {
+    padding-top: 100px;
+      padding-bottom: 100px;
+      background-color: grey;
+          .nutrition-wrapp {
+                      box-shadow: 1px 0 10px 0;
+                      background-color: #fff;
+            .breadcrumbs {
+            margin-bottom: 15px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 20px;
+
+            border-bottom: 1px solid #bec0cc;
+            a {
+              font-size: 18px;
+
+              text-decoration: none;
+
+              color: #ff7800;
+            }
+            .current {
+              color: #bec0cc;
+            }
+          }
+          .products-wrapper {
+             h1 {
+            font-size: 24px;
+            font-weight: 300;
+            padding: 15px;
+            color: #363636;
+          }
+            .col-md-3 {
+            padding: 0;
+            width: 21%;
+            margin:0 15px;
+                margin-bottom: 20px;
+            border: 1px solid #e4e5e6;
+            &:hover {
+              border: 1px solid #ff7800;
+            }
+            .recent-thumb {
+              margin-bottom: 20px;
+              padding: 15px 20px;
+
+              text-align: center;
+              img {
+                width: 152px;
+                height: 190px;
+              }
+            }
+            .recent-title {
+              font-size: 19px;
+              font-weight: 400;
+              line-height: 24px;
+
+              padding-left: 15px;
+
+              text-decoration: none;
+
+              color: #363636;
+              &:hover {
+                text-decoration: none;
+
+                color: #ff7800;
+              }
+            }
+            .packaging {
+              font-size: 12px;
+              line-height: 15px;
+
+              margin-bottom: 70px;
+              padding-left: 15px;
+
+              color: #b1b1b1;
+            }
+            .recent-price {
+              width: 100%;
+              height: 60px;
+              padding-top: 20px;
+
+              background-color: #f7f7f7;
+              &:hover {
+                background-color: #ff7800;
+                a {
+                  color: #fff;
+                  .cart-icon {
+                    background-position: 170px 0;
+                  }
+                }
+              }
+              a {
+                color: #363636;
+                &:hover {
+                  text-decoration: none;
+                }
+                .cart-icon {
+                  font-size: 24px;
+                  font-weight: 400;
+
+                  display: block;
+
+                  height: 26px;
+                  padding-left: 15px;
+
+                  background-image: url(../img/cart.png);
+                  background-repeat: no-repeat;
+                  background-position: 170px -30px;
+                  span {
+                    font-size: 22px;
+                    font-weight: 200;
+                  }
+                }
+              }
+            }
+          }
+          }
+          }
+
+}
+}
 
 
 
@@ -3140,13 +3262,15 @@ header {
 /* MEDIA QUERY */
 
 @media (max-width: 1470px) {
+
+        #hamburger {
+      display: block;
+    }
+
   .navbar {
     .navbar-header {
       position: absolute;
       top: 100%;
-    }
-    #hamburger {
-      display: block;
     }
   }
 }

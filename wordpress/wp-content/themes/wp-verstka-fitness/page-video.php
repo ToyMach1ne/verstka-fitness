@@ -15,14 +15,13 @@
                 </a>
             </h2>
             <p><?php wpeExcerpt('wpeExcerpt40'); ?>
-              <a href="<?php the_permalink(); ?>" class="more-link">Read more<span class="glyphicon glyphicon-chevron-right"></span></a>
             </p>
             <ul class="post-meta">
                 <li>
                     <time datetime="2017-01-13T10:01:18+00:00"><?php the_time('j F Y'); ?></time>
                 </li>
                 <li>
-                    <a href="<?php the_permalink(); ?>" class="read-more">Read This Post</a>
+                    <a href="https://www.youtube.com/channel/UCgBP0ono7IKfvYt7S1CwvoQ" class="read-more" target="_blank">Смотреть больше видео</a>
                 </li>
             </ul>
         </div>
