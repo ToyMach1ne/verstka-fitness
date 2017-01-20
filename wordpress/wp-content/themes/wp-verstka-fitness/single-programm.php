@@ -85,7 +85,7 @@
       <div class="col-md-12">
         <div class="recent-product">
           <h5>Похожие товары</h5>
-            <?php query_posts(array( 'post_type' => 'product','showposts' => 4, 'orderby' => 'title', 'order' => 'ASC' ) ); ?>
+            <?php query_posts(array( 'post_type' => 'programm','showposts' => 4, 'orderby' => 'title', 'order' => 'ASC' ) ); ?>
              <?php while (have_posts()) : the_post(); ?>
           <div class="col-md-3">
             <div class="recent-thumb">
@@ -96,7 +96,7 @@
             <a href="<?php the_permalink(); ?>" class="recent-title"><?php the_title(); ?></a>
             <p class="packaging"><?php the_field('package'); ?>гр</p>
             <div class="recent-price">
-            <a href="<?php the_permalink(); ?>"><span class="cart-icon"><?php the_field('price'); ?><span> руб</span></span></a>
+            <a href="<?php the_permalink(); ?>"><span class="cart-icon"><?php the_field('price'); ?><span>руб</span></span></a>
             </div>
           </div><!-- col-md-3 -->
             <?php endwhile;?>
@@ -108,7 +108,10 @@
       <div class="col-md-12">
         <div class="subscribe-block">
           <p>Подписаться на акции и скидки</p>
-          <?php echo do_shortcode('[contact-form-7 id="374" title="Product form"]'); ?>
+          <form action="#">
+            <input type="text" placeholder="Ваш электронный адрес">
+            <button>Ok</button>
+          </form>
         </div>
         <div class="text-underfooter">
       <p><span>Спортивное питание с доставкой на дом </span><?php the_field('text-underfooter'); ?></p>

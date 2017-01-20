@@ -1827,8 +1827,10 @@ header {
     background-image: none;
     .x-container {
       .thumb-post-img {
+        text-align: center;
         img {
           margin-top: 35px;
+          margin-bottom: 35px;
         }
       }
       .x-column {
@@ -2585,7 +2587,7 @@ header {
   }
 }
 
-.single-product {
+.single-product, .single-programm {
   .product-page {
     margin-bottom: 100px;
     padding-top: 100px;
@@ -2619,7 +2621,14 @@ header {
         form {
           margin-right: 15px;
           padding-top: 20px;
-          input {
+          position: relative;
+          p {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            input {
             font-size: 14px;
 
             position: relative;
@@ -2637,7 +2646,7 @@ header {
             border-radius: 3px;
             background: #fff;
           }
-          button {
+          .wpcf7-submit {
             font-size: 12px;
 
             position: relative;
@@ -2661,6 +2670,15 @@ header {
               background: #ff7800;
             }
           }
+          .wpcf7-not-valid-tip {
+            line-height: 2;
+            padding-left: 15px;
+          }
+          }
+.wpcf7-validation-errors {
+  position: absolute;
+  top:45px;
+}
         }
         .text-underfooter {
           border-bottom: 2px solid #363636;
@@ -2809,7 +2827,7 @@ header {
 
                   background-image: url(../img/cart.png);
                   background-repeat: no-repeat;
-                  background-position: 170px -30px;
+                  background-position: center -30px;
                   span {
                     font-size: 22px;
                     font-weight: 200;
@@ -3040,7 +3058,7 @@ header {
 
                   background-image: url(../img/cart.png);
                   background-repeat: no-repeat;
-                  background-position-x: 98px;
+                  background-position-x: center;
                 }
               }
             }
@@ -3160,6 +3178,25 @@ header {
     }
   }
 }
+
+@media (max-width: 990px) {
+.single-product, .single-programm {
+.thumbnail-block {
+      display: none;
+}
+.big-thumbnail-block {
+  text-align: center;
+}
+.put-to-cart {
+  &:after {
+    margin:0 auto;
+  }
+
+}
+}
+}
+
+
 @media (max-width: 980px) {
   #x-section-5 {
     .celebrity-collage {
@@ -3259,6 +3296,9 @@ header {
       }
     }
   }
+  .single-product .product-page .page-wrapp .subscribe-wrapper form p input, .single-programm .product-page .page-wrapp .subscribe-wrapper form p input {
+    width: 245px;
+  }
 }
 @media (max-width: 520px) {
   .page-id-311 .row-main #leadpages-form-wrapper form .leadbox-content-wrapper #leadpages-fieldset-wrapper #leadpages-fieldset .control-group .controls input,
@@ -3274,7 +3314,35 @@ header {
   .page-id-263 .x-main article .entry-content #x-section-5 .x-container .x-column .h3 {
     text-align: center;
   }
+  .single-product .product-page .page-wrapp .row .product-wrapp .tabs li, .single-programm .product-page .page-wrapp .row .product-wrapp .tabs li {
+        padding: 10px 5px;
+        font-size: 14px;
+  }
 }
+
+@media (max-width: 500px) {
+.single-product .product-page .page-wrapp .subscribe-wrapper .author-rights, .single-programm .product-page .page-wrapp .subscribe-wrapper .author-rights {
+  p {
+  display: none;
+}
+.social-footer-product {
+  margin: 0 auto;
+}
+}
+.wpcf7 {
+padding-left: 50px;
+}
+.single-product .product-page .page-wrapp .subscribe-wrapper .subscribe-block, .single-programm .product-page .page-wrapp .subscribe-wrapper .subscribe-block {
+  flex-direction: column;
+    justify-content: center;
+        height: 120px;
+        p {
+      text-align: center;
+    }
+}
+
+}
+
 @media (max-width: 470px) {
   .page-id-311 {
     .row-main {
@@ -3356,6 +3424,15 @@ header {
       }
     }
   }
+    .single-product .product-page .page-wrapp .row .product-wrapp .tabs, .single-programm .product-page .page-wrapp .row .product-wrapp .tabs {
+      padding:0;
+      li {
+        font-size: 12px;
+      }
+    }
+    .single-product .product-page .page-wrapp .subscribe-wrapper form p input, .single-programm .product-page .page-wrapp .subscribe-wrapper form p input {
+      width: 215px;
+    }
 }
 @media (max-width: 350px) {
   .navbar {
