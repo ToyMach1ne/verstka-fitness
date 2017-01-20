@@ -233,6 +233,9 @@ footer {
 
         width: 95%;
       }
+      .wpcf7-not-valid-tip {
+        text-align: left;
+      }
     }
   }
   .footnav {
@@ -3108,6 +3111,7 @@ header {
             margin:0 15px;
                 margin-bottom: 20px;
             border: 1px solid #e4e5e6;
+            background: linear-gradient(to top, #fff, #f7f7f7);
             &:hover {
               border: 1px solid #ff7800;
             }
@@ -3141,7 +3145,7 @@ header {
               font-size: 12px;
               line-height: 15px;
 
-              margin-bottom: 70px;
+              margin-bottom: 20px;
               padding-left: 15px;
 
               color: #b1b1b1;
@@ -3150,7 +3154,7 @@ header {
               width: 100%;
               height: 60px;
               padding-top: 20px;
-
+              border-top: 1px solid #ff7800;
               background-color: #f7f7f7;
               &:hover {
                 background-color: #ff7800;
@@ -3183,6 +3187,13 @@ header {
                     font-weight: 200;
                   }
                 }
+              }
+            }
+            .post-ratings {
+              padding-bottom: 20px;
+              text-align: center;
+              .post-ratings-text {
+                display: none !important;
               }
             }
           }
@@ -3317,6 +3328,18 @@ header {
   }
 
 }
+}
+.page-id-323 {
+  .nutrition-page {
+    .nutrition-wrapp {
+      .products-wrapper {
+        .col-md-3 {
+              width: 100%;
+              margin: 0;
+        }
+      }
+    }
+  }
 }
 }
 
