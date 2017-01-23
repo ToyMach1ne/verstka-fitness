@@ -51,15 +51,6 @@
         <div class="x-colophon-content">
           <p>Евгений Корчун и Юлия рогозина. Фитнесс тренировки. Онлайн фитнесс тренировки. Винница, Украина </p>
           <img class="payments" src="<?php echo get_template_directory_uri(); ?>/img/cards1.png">
-          <p>
-            <a href="http://scottlaidler.com/refund-policy">refund policy</a>|
-            <a href="http://scottlaidler.com/delivery-policy">delivery policy</a>|
-            <a href="http://scottlaidler.com/terms-and-conditions">terms and conditions</a>|
-            <a href="http://scottlaidler.com/disclaimer/">disclaimer</a>|
-            <a href="http://scottlaidler.com/pricing-list/">pricing List</a>|
-            <a href="http://scottlaidler.com/privacy-policy">privacy policy</a>| built by
-            <a href="http://circuiteight.com/" title="Circuit eight web development">CIRCUIT EIGHT</a>
-          </p>
         </div>
       </div>
     </footer>
