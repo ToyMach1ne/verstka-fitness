@@ -803,10 +803,18 @@ header {
           padding: 70px 0;
           padding-right: 0 !important;
           padding-left: 0 !important;
-
           background-color: transparent;
-          background-image: url(../img/main-banner-v3.jpg);
-          background-repeat: none;
+          background-color:#000 !important;
+          background-image: url(../img/ulya-bg.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position-x: 700px;
+          .h-custom-headline {
+            color:#fff;
+          }
+          .x-column {
+            color:#fff;
+          }
         }
         #x-section-4 {
           margin: 0 0 0;
@@ -1015,10 +1023,12 @@ header {
 
                 text-transform: uppercase;
               }
-              .x-blockquote {
+            }
+            .x-blockquote {
                 font-size: 20px;
                 font-style: italic;
-
+                width: 33%;
+                margin: 0 auto;
                 margin-top: 0;
                 .x-cite {
                   font-size: .725em;
@@ -1031,7 +1041,6 @@ header {
                   color: #7a7a7a;
                 }
               }
-            }
           }
         }
         #x-section-7 {
@@ -1065,6 +1074,9 @@ header {
                 margin-top: 60px;
                 .x-pricing-column {
                   .x-pricing-column-info {
+                    .x-price {
+                      font-size: 35px;
+                    }
                     .x-btn {
                       display: block;
 
@@ -1782,7 +1794,9 @@ header {
       position: relative;
 
       float: left;
-
+        display: flex;
+    align-items: center;
+    justify-content: center;
       width: 70px;
       height: 70px;
 
@@ -2412,8 +2426,6 @@ header {
       width: 100%;
       height: 100%;
       padding: 10pt;
-      padding-top: 190px;
-      padding-top: 150px;
       padding-bottom: 0;
 
       text-align: center;
@@ -2585,7 +2597,13 @@ header {
       }
     }
     .modal-form-opened {
-      display: block !important;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex !important;
+    justify-content: center;
+    align-items: center;
     }
   }
 }
@@ -3389,7 +3407,11 @@ header {
     }
   }
 }
-
+.page-id-267 {
+  #x-section-1 {
+        background: linear-gradient(to left, #d4d4d4, grey);
+  }
+}
 
 /* Mobile Menu */
 #adaptive-menu {
