@@ -15,11 +15,11 @@
                 <div class="x-raw-content">
                   <p class="intro"><?php the_field('description'); ?></p>
                     <a class="x-btn bright-blue x-btn-transparent x-btn-square x-btn-large"
-                    href="#" title="Online personal training" data-options="thumbnail: ''">
-                    <i class="x-icon x-icon-sign-in" data-x-icon="&#xf090;" aria-hidden="true"></i>Learn More</a>
+                    href="/onlajn-personalnye-trenirovki.htm" title="Online personal training" data-options="thumbnail: ''">
+                    <i class="x-icon x-icon-sign-in" data-x-icon="&#xf090;"></i>Узнать Больше</a>
                     <span class="video-lightbox-button">
-                      <a rel="wp-video-lightbox" href="#" title="">
-                        <i class="x-icon x-icon-youtube-play" data-x-icon="" aria-hidden="true"></i> WATCH VIDEO</a>
+                      <a  href="https://www.youtube.com/channel/UCgBP0ono7IKfvYt7S1CwvoQ" target="_blank">
+                        <i class="x-icon x-icon-youtube-play" data-x-icon="" aria-hidden="true"></i> Смотреть Видео</a>
                     </span>
                 </div>
               </div>
@@ -154,8 +154,14 @@
                 <a class="x-btn red x-btn-transparent x-btn-square x-btn-large" style="margin-top:20px"
                 href="#" data-options="thumbnail: ''"><i class="x-icon x-icon-sign-in" data-x-icon="&#xf090;" aria-hidden="true"></i>Learn More</a>
               </div>
-              <div class="x-column x-sm x-1-2">
-                <img class="x-img x-img-none" style="margin-top:60px;" src="<?php echo get_template_directory_uri(); ?>/img/responsive-sales-page1.jpg">
+              <div class="x-column x-sm x-1-2 avantage-bg">
+                <?php if( have_rows('advatnage-skins-img') ): ?>
+                <?php while( have_rows('advatnage-skins-img') ): the_row();
+                // vars
+                $image = get_sub_field('skin-img'); ?>
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+                <?php endwhile; ?>
+                <?php endif; ?>
               </div>
             </div>
           </div><!-- x-section-7 -->

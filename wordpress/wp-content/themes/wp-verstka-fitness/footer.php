@@ -56,42 +56,40 @@
     </footer>
   </div>
   <!-- END #top.site -->
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/inline_1.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/inline_6.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/inline_2.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/inline_7.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/inline_3.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/inline_8.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/inline_9.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/inline_10.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/inline_11.js"></script>
-    <noscript>
+<!-- <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/inline_1.js"></script> -->
+    <!-- <script src="<?php echo get_template_directory_uri(); ?>/js/inline_6.js"></script> -->
+   <!--  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/inline_2.js"></script> -->
+    <!-- <script src="<?php echo get_template_directory_uri(); ?>/js/inline_7.js"></script> -->
+    <!-- <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/inline_3.js"></script> -->
+    <!-- <script src="<?php echo get_template_directory_uri(); ?>/js/inline_8.js"></script> -->
+    <!-- <script src="<?php echo get_template_directory_uri(); ?>/js/inline_9.js"></script> -->
+    <!-- <script src="<?php echo get_template_directory_uri(); ?>/js/inline_10.js"></script> -->
+    <!-- <script src="<?php echo get_template_directory_uri(); ?>/js/inline_11.js"></script> -->
+    <!-- <noscript>
       <img height="1" width="1" style="display:none" src="<?php echo get_template_directory_uri(); ?>/img/tr">
-    </noscript>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/inline_12.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/css/getTrackingCode"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/inline_13.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/inline_4.js"></script>
-
-
-
+    </noscript> -->
+    <!-- <script src="<?php echo get_template_directory_uri(); ?>/js/inline_12.js"></script> -->
+    <!-- <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/css/getTrackingCode"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/inline_13.js"></script> -->
+    <!-- <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/inline_4.js"></script> -->
 
 
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.mmenu.all.min.js"></script>
-  <div class="gmw-dialog" style="display: none;" data-map-height="550"
-  data-map-width="550" data-map-skin="light" data-map-iframe-url="//maps.google.com/maps?hl=en&amp;ie=utf8&amp;output=embed&amp;iwloc=addr&amp;iwd=1&amp;mrt=loc&amp;t=m&amp;q=Pinewood+Studios%2C+Pinewood+Road%2C+Iver+Heath%2C+Buckinghamshire+SL0+0NH%2C+United+Kingdom&amp;z=14"
-  id="gmw-dialog-googlemapswidget-3" title="Visit me at Pinewood film studios">
-    <div class="gmw-map"></div>
-  </div>
-  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/inline_5.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/inline_14.js"></script>
+
+<!--   <div class="gmw-dialog" style="display: none;" data-map-height="550"
+data-map-width="550" data-map-skin="light" data-map-iframe-url="//maps.google.com/maps?hl=en&amp;ie=utf8&amp;output=embed&amp;iwloc=addr&amp;iwd=1&amp;mrt=loc&amp;t=m&amp;q=Pinewood+Studios%2C+Pinewood+Road%2C+Iver+Heath%2C+Buckinghamshire+SL0+0NH%2C+United+Kingdom&amp;z=14"
+id="gmw-dialog-googlemapswidget-3" title="Visit me at Pinewood film studios">
+  <div class="gmw-map"></div>
+</div> -->
+  <!-- <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/inline_5.js"></script> -->
+  <!-- <script src="<?php echo get_template_directory_uri(); ?>/js/inline_14.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/inline_20.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/inline_21.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/js/inline_15.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/js/inline_16.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/js/inline_17.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/js/inline_18.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/inline_19.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/inline_19.js"></script> -->
 
    <?php wp_footer(); ?>
 </body>
