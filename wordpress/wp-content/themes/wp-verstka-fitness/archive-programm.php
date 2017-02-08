@@ -1,8 +1,8 @@
-<?php /* Template Name: Программы/Продукты */ get_header(); ?>
+<?php get_header(); ?>
 <div class="x-main full" role="main">
     <article id="post-4786" class="post-4786 page type-page status-publish hentry no-post-thumbnail">
         <div class="entry-content content">
-        <?php query_posts( array( 'post_type' => array('programm', 'product') ) ); ?>
+        <?php query_posts(array( 'post_type' => 'programm','showposts' => 12, 'orderby' => 'title', 'order' => 'ASC' ) ); ?>
                     <?php while (have_posts()) : the_post(); ?>
             <div id="x-section-1" class="x-section">
                 <div class="x-container max width">

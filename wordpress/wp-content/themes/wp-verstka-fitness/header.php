@@ -8,6 +8,7 @@
   rel="pingback" href="assets/xmlrpc.php">
     <meta name="keywords" itemprop="keywords" content="online personal trainer, online personal training, online fitness programs, online fitness plans, fat loss training plan, personal trainer">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <script type="text/javascript" src="https://vk.com/js/api/share.js?94" charset="windows-1251"></script>
       <!--[if lt IE 9]>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>

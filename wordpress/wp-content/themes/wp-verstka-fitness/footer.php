@@ -31,6 +31,19 @@
           <nav class="footnav">
             <?php wpeFootNav(); ?>
           </nav>
+            <div class="social-share">
+              <?php $text = '#Split$Fit'; // текст твита
+              $url = 'https://truemisha.ru/?p=1'; // ссылка на страницу ?>
+              <a href="http://twitter.com/share?text=<?php echo $text ?>&url=<?php echo urlencode( $url ) ?>" title="Поделиться ссылкой в Твиттере" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" target="_parent">Твитнуть
+              <i class="x-icon-twitter-square" data-x-icon="&#xf081;" aria-hidden="true"></i></a>
+               <?php $text2 = '#Split$Fit'; // текст твита
+              $url = 'https://truemisha.ru/?p=1'; // ссылка на страницу ?>
+              <a href="http://facebook.com/share?text2=<?php echo $text2 ?>&url=<?php echo urlencode( $url ) ?>" title="Поделиться ссылкой в Facebbok" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" target="_parent">Поделится
+              <i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <script type="text/javascript"><!--
+document.write(VK.Share.button(false,{type: "custom", text: "<img src=\"https://vk.com/images/share_32.png\" width=\"32\" height=\"32\" />"}));
+--></script>
+            </div><!-- social-share -->
         </div>
       </div>
     </footer>
@@ -46,6 +59,8 @@
           title="Instagram" target="_blank"><i class="x-icon-instagram" data-x-icon="&#xf16d;" aria-hidden="true"></i></a>
           <a href="https://www.facebook.com/groups/478491599012984/" class="facebook"
           title="Facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/julirogozina/" class="instagram"
+          title="Instagram" target="_blank"><i class="x-icon-instagram female-ins" data-x-icon="&#xf16d;" aria-hidden="true"></i></a>
 
         </div>
         <div class="x-colophon-content">
@@ -92,6 +107,7 @@ id="gmw-dialog-googlemapswidget-3" title="Visit me at Pinewood film studios">
   <script src="<?php echo get_template_directory_uri(); ?>/js/inline_19.js"></script> -->
 
    <?php wp_footer(); ?>
+               <a href="#" class="scrollToTop"><img src="<?php echo get_template_directory_uri(); ?>/img/arrow_up.png" alt=""></a>
 </body>
 
 </html>

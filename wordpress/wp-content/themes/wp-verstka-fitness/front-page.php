@@ -219,14 +219,13 @@
                 <div class="x-raw-content">
                   <div id="sb_instagram" class="sbi sbi_col_2"
                   data-id="2106189244" data-num="4" data-res="auto" data-cols="2" data-options="{&quot;sortby&quot;: &quot;none&quot;, &quot;headercolor&quot;: &quot;&quot;, &quot;imagepadding&quot;: &quot;5&quot;}">
-                    <div class="sb_instagram_header"></div>
-                    <div id="sbi_images">
-                      <div class="sbi_loader fa-spin"></div>
-                    </div>
+                    <?php if ( is_active_sidebar('widgetarea1') ) : ?>
+                    <?php dynamic_sidebar( 'widgetarea1' ); ?>
+                    <?php endif; ?>
                     <div id="sbi_load">
-                      <a class="sbi_load_btn" href="javascript:void(0);" style="">Load More...</a>
+                      <a class="sbi_load_btn" href="/onlajn-personalnye-trenirovki.htm" style="">Load More...</a>
                       <div class="sbi_follow_btn">
-                        <a href="http://instagram.com/" style="" target="_blank"><i class="fa fa-instagram"></i>Follow on Instagram</a>
+                        <a href="https://www.instagram.com/eugene.korchun/" style="" target="_blank"><i class="fa fa-instagram"></i>Follow on Instagram</a>
                       </div>
                     </div>
                   </div>

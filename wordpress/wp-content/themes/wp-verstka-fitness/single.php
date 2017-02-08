@@ -10,6 +10,19 @@
                     <?php if (have_posts()): while (have_posts()) : the_post(); ?>
                       <p><?php the_content(); ?></p>
                     <?php endwhile; endif; ?>
+                    <div class="social-share">
+                          <?php $text = '#Split$Fit'; // текст твита
+                          $url = 'https://truemisha.ru/?p=1'; // ссылка на страницу ?>
+                          <a href="http://twitter.com/share?text=<?php echo $text ?>&url=<?php echo urlencode( $url ) ?>" title="Поделиться ссылкой в Твиттере" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" target="_parent">Твитнуть
+                          <i class="x-icon-twitter-square" data-x-icon="&#xf081;" aria-hidden="true"></i></a>
+                           <?php $text2 = '#Split$Fit'; // текст твита
+                          $url = 'https://truemisha.ru/?p=1'; // ссылка на страницу ?>
+                          <a href="http://facebook.com/share?text2=<?php echo $text2 ?>&url=<?php echo urlencode( $url ) ?>" title="Поделиться ссылкой в Facebbok" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" target="_parent">Поделится
+                          <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                          <script type="text/javascript"><!--
+            document.write(VK.Share.button(false,{type: "custom", text: "<img src=\"https://vk.com/images/share_32.png\" width=\"32\" height=\"32\" />"}));
+            --></script>
+                  </div><!-- social-share -->
                     <div class="yarpp-related">
                         <h3>Популярные Новости:</h3>
                         <div class="yarpp-thumbnails-horizontal">

@@ -34,6 +34,10 @@
                                     <p><i class="x-icon x-icon-phone" data-x-icon="" aria-hidden="true"></i> <?php the_field('phone'); ?>
                                         <br>
                                         <i class="x-icon x-icon-envelope" data-x-icon="" aria-hidden="true"></i> <?php the_field('email'); ?></p>
+                                        <span>Социальные сети:</span>
+                                        <a href="https://vk.com/id18209380"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                                        <a href="https://www.facebook.com/groups/478491599012984/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="https://vk.com/j.rogozina"><i class="fa fa-vk fa-second-vk" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>

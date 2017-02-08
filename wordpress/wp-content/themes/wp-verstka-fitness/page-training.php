@@ -2,12 +2,14 @@
 <div id="wrapper">
     <div id="hero-section" class="role-element leadstyle-container">
         <!-- START OF SECTION -->
-        <img src="//lh3.ggpht.com/hjOzCJQrwrB_zq2HqNXiyLguPiAFf35wtROXiLW4_h5vxGFaUFU4Ec9mo7sGX3LA087JIGKZ1b6kpKqiHGtJhQ=s0" class="img-responsive hero-bg role-element leadstyle-background-image">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/dual.jpg" class="img-responsive hero-bg role-element leadstyle-background-image">
         <div class="hero-text-container">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center">
                         <div class="hero-text">
+                        <p><span class="top-slogan-first">Персональные тренировки с гарантированым результатом</span> под руководством <br>
+                        <span class="top-slogan">Корчуна Евгения и Рогозиной Юлии</span></p>
                         </div>
                     </div>
                 </div>
