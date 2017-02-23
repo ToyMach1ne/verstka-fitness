@@ -15,8 +15,8 @@
                 <div class="x-raw-content">
                   <p class="intro"><?php the_field('description'); ?></p>
                     <a class="x-btn bright-blue x-btn-transparent x-btn-square x-btn-large"
-                    href="/onlajn-personalnye-trenirovki.htm" title="Online personal training" data-options="thumbnail: ''">
-                    <i class="x-icon x-icon-sign-in" data-x-icon="&#xf090;"></i>Узнать Больше</a>
+                    href="/onlajn-personalnye-trenirovki.htm" title="Online personal training" data-options="thumbnail: ''" target="_blank">
+                    <i class="x-icon x-icon-sign-in" data-x-icon="&#xf090;" aria-hidden="true"></i>Узнать Больше</a>
                     <span class="video-lightbox-button">
                       <a  href="https://www.youtube.com/channel/UCgBP0ono7IKfvYt7S1CwvoQ" target="_blank">
                         <i class="x-icon x-icon-youtube-play" data-x-icon="" aria-hidden="true"></i> Смотреть Видео</a>
@@ -39,6 +39,7 @@
                 </div>
               </div>
               <div class="x-column x-sm x-1-2">
+                <h6 class="press-title">СМИ о Нас</h6>
               <?php if( have_rows('comments') ): while ( have_rows('comments') ) : the_row();
                   // vars
                   $image = get_sub_field('comm_img');?>
@@ -47,7 +48,7 @@
                   <blockquote class="x-blockquote">
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
                     <?php the_sub_field('comm_desc'); ?>
-                    <cite class="x-cite"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_sub_field('comm_person'); ?></a></cite>
+                    <cite class="x-cite"><a href="https://vk.com/split4fit" target="_blank" title="<?php the_title(); ?>"><?php the_sub_field('comm_person'); ?></a></cite>
                     <div style="clear: both;"></div>
                   </blockquote>
                 </div>
@@ -152,7 +153,7 @@
                 </ul><!-- x-feature-list -->
 
                 <a class="x-btn red x-btn-transparent x-btn-square x-btn-large" style="margin-top:20px"
-                href="#" data-options="thumbnail: ''"><i class="x-icon x-icon-sign-in" data-x-icon="&#xf090;" aria-hidden="true"></i>Learn More</a>
+                href="/onlajn-personalnye-trenirovki.htm" data-options="thumbnail: ''"><i class="x-icon x-icon-sign-in" data-x-icon="&#xf090;" aria-hidden="true"></i>Узнать Больше</a>
               </div>
               <div class="x-column x-sm x-1-2 avantage-bg">
                 <?php if( have_rows('advatnage-skins-img') ): ?>
@@ -213,7 +214,9 @@
                 </h2>
                 <h2 class="h-custom-headline instagram-tag h3">
                   <span>
-                    <a href="https://www.instagram.com/eugene.korchun/">#Korchun_coach #rogozina_coach #s4f #Split4Fit</a>
+                    <a href="https://www.instagram.com/eugene.korchun/" target="_blank">#Korchun_coach</a>
+                    <a href="https://www.instagram.com/julirogozina/" target="_blank">#rogozina_coach</a>
+                    <a href="https://www.instagram.com/explore/tags/split4fit/" target="_blank">#s4f #Split4Fit</a>
                   </span>
                 </h2>
                 <div class="x-raw-content">
@@ -225,7 +228,7 @@
                     <div id="sbi_load">
                       <a class="sbi_load_btn" href="/onlajn-personalnye-trenirovki.htm" style="">Load More...</a>
                       <div class="sbi_follow_btn">
-                        <a href="https://www.instagram.com/eugene.korchun/" style="" target="_blank"><i class="fa fa-instagram"></i>Follow on Instagram</a>
+                        <a href="https://www.instagram.com/explore/tags/split4fit/" target="_blank"><i class="fa fa-instagram"></i>Follow on Instagram</a>
                       </div>
                     </div>
                   </div>

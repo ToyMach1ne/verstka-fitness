@@ -18,7 +18,6 @@
             </div>
             <a href="<?php the_permalink(); ?>" class="recent-title"><?php the_title(); ?></a>
             <p class="packaging"><?php the_field('package'); ?>гр</p>
-            <?php if(function_exists('the_ratings')) { the_ratings(); } ?>
             <div class="recent-price">
             <a href="<?php the_permalink(); ?>"><span class="cart-icon"><?php the_field('price'); ?><span> руб</span></span></a>
             </div>

@@ -10,7 +10,7 @@
                         <div class="x-container center-text  max width">
                             <div class="x-column x-sm x-1-1">
                                 <h2 class="h-custom-headline man h3">
-                                  <span>Get in Touch</span>
+                                  <span>Связатся С Нами</span>
                                 </h2>
                             </div>
                         </div>

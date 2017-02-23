@@ -20,7 +20,6 @@
 <body <?php body_class(); ?>>
   <div id="top" class="site">
 <header>
-<a href="#adaptive-menu" id="hamburger" class="humb-toggle-switch humb-toggle-switch__htx"><i class="fa fa-bars" aria-hidden="true"></i></a>
       <div class="container-fluid">
         <div class="row">
           <nav class="navbar" role="navigation">
@@ -40,7 +39,7 @@
             <div class="collapse navbar-collapse main-nav">
               <?php wpeHeadNav(); ?>
             </div>
-
+            <a href="#adaptive-menu" id="hamburger" class="humb-toggle-switch humb-toggle-switch__htx"><i class="fa fa-bars" aria-hidden="true"></i></a>
             <nav class="mobile-menu" id="adaptive-menu">
           <?php wpeHeadSecondNav(); ?>
         </nav>

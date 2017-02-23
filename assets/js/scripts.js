@@ -1805,7 +1805,6 @@ function showTabsContent(b) {
 
 //*END OF TABS*/
 
-
 $(document).ready(function(){
 
   //Check to see if the window is top if not then display button
@@ -1824,3 +1823,8 @@ $(document).ready(function(){
   });
 
 });
+
+  // Scroll to Element//
+
+// END Scroll to Element//
+

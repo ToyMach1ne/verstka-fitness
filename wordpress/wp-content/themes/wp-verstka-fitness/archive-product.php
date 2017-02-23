@@ -2,8 +2,7 @@
 <div class="x-main full" role="main">
     <article id="post-4786" class="post-4786 page type-page status-publish hentry no-post-thumbnail">
         <div class="entry-content content">
-        <?php query_posts(array( 'post_type' => 'product','showposts' => 12, 'orderby' => 'title', 'order' => 'ASC' ) ); ?>
-                    <?php while (have_posts()) : the_post(); ?>
+        <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
             <div id="x-section-1" class="x-section">
                 <div class="x-container max width">
                     <div class="x-column x-sm x-1-1">
@@ -36,7 +35,7 @@
                     </div><!-- x-column -->
                 </div>
             </div><!-- x-section-1 -->
-            <?php endwhile;?>
+            <?php endwhile; endif; ?>
             <?php get_template_part('pagination'); ?>
             <form class="search" method="get" action="<?php echo home_url(); ?>" role="search">
       <input class="search-input" type="search" name="s" placeholder="To search, type and hit enter.">

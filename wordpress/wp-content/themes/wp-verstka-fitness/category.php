@@ -17,7 +17,7 @@
                     <?php the_title(); ?>
                 </a>
             </h2>
-            <p><?php wpeExcerpt('wpeExcerpt40'); ?>
+            <p>
               <a href="<?php the_permalink(); ?>" class="more-link">Read more<span class="glyphicon glyphicon-chevron-right"></span></a>
             </p>
             <ul class="post-meta">
