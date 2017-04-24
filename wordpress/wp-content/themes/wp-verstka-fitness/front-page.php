@@ -226,7 +226,7 @@
                     <?php dynamic_sidebar( 'widgetarea1' ); ?>
                     <?php endif; ?>
                     <div id="sbi_load">
-                      <a class="sbi_load_btn" href="/onlajn-personalnye-trenirovki.htm" style="">Load More...</a>
+                      <!-- <a class="sbi_load_btn" href="/onlajn-personalnye-trenirovki.htm" style="">Load More...</a> -->
                       <div class="sbi_follow_btn">
                         <a href="https://www.instagram.com/explore/tags/split4fit/" target="_blank"><i class="fa fa-instagram"></i>Follow on Instagram</a>
                       </div>

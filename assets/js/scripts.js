@@ -1824,7 +1824,4 @@ $(document).ready(function(){
 
 });
 
-  // Scroll to Element//
-
-// END Scroll to Element//
 

@@ -1008,6 +1008,13 @@ header {
               .x-raw-content {
                 .x-blockquote {
                   border-color: #bbb;
+                  font-size: 18px;
+                  .x-cite {
+                    display: block;
+                    font-size: 15px;
+                    color: #7a7a7a;
+                    padding-top: 10px;
+                  }
                 }
               }
               .h3 {
@@ -1274,6 +1281,9 @@ header {
   max-width: 100%;
 
   color: #797979;
+  h4 {
+    color:#fff;
+  }
   .container {
     width: 1170px;
     max-width: 100%;
@@ -1301,7 +1311,6 @@ header {
   h1,
   h2,
   h3,
-  h4,
   h5 {
     font-family: 'Oswald',sans-serif;
 
